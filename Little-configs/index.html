@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMERJ</title>
+
+    <link rel="icon" href="./Images/Escudo.png">
+
+    <link rel="stylesheet" href="./CSS/Global.css">
+    <link rel="stylesheet" href="./CSS/background.css">
+
+    <script src="./JS/script.js" defer></script>
+
+    <!--FONTE POPPINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id="background">
+        <video loop autoplay muted>
+            <source src="/Grafic/Images/space.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <main class="conteiner">
+        
+        <div class="main">
+            <h3 class="welcome">Bem vindo!</h3>
+            <p class="subtitle">Configuração do script</p>
+            <div class="first-block">
+                <div class="when-data">
+                    <p class="info">Data</p>
+                    <form  method="post">
+                        <input type="text" class="first-input" id="dateSc" placeholder="AAAA-MM-DD" required>
+                </div>
+
+                <div class="when-horario" id="selects">
+                    <p class="info">Horário</p>
+                    <select id="horario" class="first-input" aria-placeholder="Selecione um horário" required>
+                        <option selected="selected" value="0">Selecione</option>
+                        <option value="1">06:00</option>
+                        <option value="2">06:30</option>
+                        <option value="3">07:00</option>
+                    </select>
+                </div>
+            </div>
+            <p class="subtitle">Configuração da inscrição</p>
+            <div class="sec-block">
+                <div class="convenio" id="selects">
+                    <p class="info">Convênio</p>
+                    <select id="convenio" class="sec-input" required>
+                        <option selected="selected" value="0">Selecione</option>
+                        <option value="156">01 CIPM - RAS</option>
+                        <option value="164">01 CPA - RAS</option>
+                        <option value="139">01 DPJM - RAS</option>
+                        <option value="106">01 UPP 2 BPM SANTA MARTA - RAS</option>
+                        <option value="130">01 UPP 22 BPM ADEUS BAIANA - RAS</option>
+                        <option value="30">02 BPM - RAS</option>
+                        <option value="1250">02 CIPM - RAS</option>
+                        <option value="172">02 CPA - RAS</option>
+                        <option value="141">02 DPJM - RAS</option>
+                        <option value="128">02 UPP / 5 BPM (PROVIDÊNCIA) - RAS</option>
+                        <option value="55">03 BPM - RAS</option>
+                        <option value="163">03 CPA - RAS</option>
+                        <option value="144">03 DPJM - RAS</option>
+                        <option value="142">03 UPP / 19 BPM (PAVAO) - RAS</option>
+                        <option value="80">03 UPP 19 BPM TABAJARAS - RAS</option>
+                        <option value="47">04 BPM - RAS</option>
+                        <option value="165">04 CPA - RAS</option>
+                        <option value="148">04 DPJM - RAS</option>
+                        <option value="134">04 UPP / 19 BPM (BABILONIA) - RAS</option>
+                        <option value="44">05 BPM - RAS</option>
+                        <option value="166">05 CPA - RAS</option>
+                        <option value="154">05 DPJM - RAS</option>
+                        <option value="113">05 UPP / 23 BPM (ROCINHA) - RAS</option>
+                        <option value="34">06 BPM - RAS</option>
+                        <option value="167">06 CPA - RAS</option>
+                        <option value="158">06 DPJM - RAS</option>
+                        <option value="112">06 UPP / 03 BPM (SAO JOAO) - RAS</option>
+                        <option value="46">07 BPM - RAS</option>
+                        <option value="168">07 CPA - RAS</option>
+                        <option value="133">07 UPP / 03 BPM (JACAREZINHO) - RAS</option>
+                        <option value="54">08 BPM - RAS</option>
+                        <option value="91">08 UPP / 03 BPM (LINS) - RAS</option>
+                        <option value="50">09 BPM - RAS</option>
+                        <option value="132">09 UPP / 04 BPM (TURANO) - RAS</option>
+                        <option value="53">10 BPM - RAS</option>
+                        <option value="137">10 UPP / 06 BPM (BOREL) - RAS</option>
+                        <option value="39">11 BPM - RAS</option>
+                        <option value="122">11 UPP / 06 BPM (MACACOS) - RAS</option>
+                        <option value="73">12 BPM - RAS</option>
+                        <option value="93">12 UPP / 16 BPM (COMPLEXO DO ALEMAO) - RAS</option>
+                        <option value="100">13 UPP / 16 BPM (COMPLEXO DA PENHA) - RAS</option>
+                        <option value="51">14 BPM - RAS</option>
+                        <option value="35">15 BPM - RAS</option>
+                        <option value="129">15 UPP / 22 BPM (MANGUINHOS) - RAS</option>
+                        <option value="43">16 BPM - RAS</option>
+                        <option value="92">16 UPP / 04 BPM (MANGUEIRA) - RAS</option>
+                        <option value="37">17 BPM - RAS</option>
+                        <option value="58">18 BPM - RAS</option>
+                        <option value="40">19 BPM - RAS</option>
+                        <option value="64">20 BPM - RAS</option>
+                        <option value="56">21 BPM - RAS</option>
+                        <option value="59">22 BPM - RAS</option>
+                        <option value="36">23 BPM - RAS</option>
+                        <option value="65">24 BPM - RAS</option>
+                        <option value="69">25 BPM - RAS</option>
+                        <option value="41">26 BPM - RAS</option>
+                        <option value="32">27 BPM - RAS</option>
+                        <option value="71">28 BPM - RAS</option>
+                        <option value="45">29 BPM - RAS</option>
+                        <option value="60">30 BPM - RAS</option>
+                        <option value="72">31 BPM - RAS</option>
+                        <option value="38">32 BPM - RAS</option>
+                        <option value="70">33 BPM - RAS</option>
+                        <option value="31">34 BPM - RAS</option>
+                        <option value="62">35 BPM - RAS</option>
+                        <option value="74">36 BPM - RAS</option>
+                        <option value="67">37 BPM - RAS</option>
+                        <option value="66">38 BPM - RAS</option>
+                        <option value="33">39 BPM - RAS</option>
+                        <option value="42">40 BPM - RAS</option>
+                        <option value="61">41 BPM - RAS</option>
+                        <option value="187">7 DPJM - RAS</option>
+                        <option value="1274">ÁGUAS DE JUTURNAÍBA</option>
+                        <option value="1275">ÁGUAS DE NITERÓI</option>
+                        <option value="1272">AGUAS DO BRASIL FAB</option>
+                        <option value="1273">AGUAS DO PARAÍBA</option>
+                        <option value="1268">AGUAS DO RIO 1 (Rio e Sao Gonçalo)</option>
+                        <option value="1269">AGUAS DO RIO 4 (Baixada e Penha)</option>
+                        <option value="204">AJUDÂNCIA GERAL - RAS</option>
+                        <option value="1267">ALERJ</option>
+                        <option value="104">APM - RAS</option>
+                        <option value="79">BAC - RAS</option>
+                        <option value="86">BEPE</option>
+                        <option value="75">BOPE - RAS</option>
+                        <option value="76">BPCHQ - RAS</option>
+                        <option value="57">BPTUR - RAS</option>
+                        <option value="68">BPVE - RAS</option>
+                        <option value="1271">BTM - RAS</option>
+                        <option value="223">CAES</option>
+                        <option value="175">CCOMSOC - RAS</option>
+                        <option value="222">CCPMERJ - MUSEU</option>
+                        <option value="201">CCR VIA LAGOS</option>
+                        <option value="102">CEADPM - RAS</option>
+                        <option value="243">CEASA</option>
+                        <option value="179">CECOPOM - RAS</option>
+                        <option value="1">CEDAE</option>
+                        <option value="108">CEFD - RAS</option>
+                        <option value="99">CFAP - RAS</option>
+                        <option value="181">CFAP/CCPP</option>
+                        <option value="110">CFRPM - RAS</option>
+                        <option value="160">CGPM - RAS</option>
+                        <option value="109">CIEAT - RAS</option>
+                        <option value="231">CIESPP</option>
+                        <option value="115">CIPM-MUS - RAS</option>
+                        <option value="82">COE - RAS</option>
+                        <option value="1255">CONCESSIONÁRIA AEROPORTO RIO DE JANEIRO S.A</option>
+                        <option value="228">CONTROLADORIA - PMERJ</option>
+                        <option value="1270">CONTROLADORIA GERAL DO ESTADO DO RIO DE JANEIRO</option>
+                        <option value="85">CPAM - RAS</option>
+                        <option value="81">CPE - RAS</option>
+                        <option value="218">CPMERJ CAMPO GRANDE</option>
+                        <option value="220">CPMERJ DUQUE DE CAXIAS</option>
+                        <option value="217">CPMERJ NITERÓI</option>
+                        <option value="84">CPP - RAS</option>
+                        <option value="21">CPROEIS</option>
+                        <option value="63">CPRV - RAS</option>
+                        <option value="239">CPTRANS</option>
+                        <option value="226">DABST - RAS</option>
+                        <option value="184">DAS RAS</option>
+                        <option value="232">DCMUN</option>
+                        <option value="152">DCP - RAS</option>
+                        <option value="235">DEA - RAS</option>
+                        <option value="240">DEFENSORIA PÚBLICA DO ESTADO DO RIO DE JANEIRO</option>
+                        <option value="153">DF - RAS</option>
+                        <option value="155">DGAF - RAS</option>
+                        <option value="143">DGAL</option>
+                        <option value="150">DGEI - RAS</option>
+                        <option value="171">DGO - RAS</option>
+                        <option value="183">DGP RAS</option>
+                        <option value="203">DGS</option>
+                        <option value="193">DGTIC - RAS</option>
+                        <option value="178">DIRETORIA DE TRANSPORTES</option>
+                        <option value="229">DLP - RAS</option>
+                        <option value="242">DMP - RAS</option>
+                        <option value="157">DMSA</option>
+                        <option value="174">DOR - RAS</option>
+                        <option value="182">DPA RAS</option>
+                        <option value="227">DPAT - RAS</option>
+                        <option value="176">DPPMERJ - RAS</option>
+                        <option value="151">DRSP - RAS</option>
+                        <option value="224">DVP</option>
+                        <option value="146">EMG - RAS</option>
+                        <option value="116">ESPM - RAS</option>
+                        <option value="1248">FAZ. MARAMBAIA - RAS</option>
+                        <option value="78">GAM - RAS</option>
+                        <option value="149">GCG - RAS</option>
+                        <option value="107">GESAR - RAS</option>
+                        <option value="191">GPFER</option>
+                        <option value="101">HCPM - RAS</option>
+                        <option value="97">HPM / NIT - RAS</option>
+                        <option value="1264">IGUÁ</option>
+                        <option value="1249">LEI SECA</option>
+                        <option value="3">LIGHT</option>
+                        <option value="13">LINHA AMARELA S/A</option>
+                        <option value="1252">MUNICÍPIO DE ARARUAMA</option>
+                        <option value="221">MUNICIPIO DE ARRAIAL DO CABO</option>
+                        <option value="1277">MUNICÍPIO DE BELFORD ROXO</option>
+                        <option value="244">MUNICÍPIO DE DUQUE DE CAXIAS</option>
+                        <option value="1260">MUNICÍPIO DE GUAPIMIRIM</option>
+                        <option value="1258">MUNICÍPIO DE IGUABA GRANDE</option>
+                        <option value="1261">MUNICÍPIO DE MENDES</option>
+                        <option value="18">MUNICIPIO DE NITEROI</option>
+                        <option value="215">MUNICIPIO DE PARACAMBI</option>
+                        <option value="1259">MUNICÍPIO DE PAULO DE FRONTIN</option>
+                        <option value="1262">MUNICÍPIO DE PINHEIRAL</option>
+                        <option value="211">MUNICÍPIO DE SÃO JOÃO DA BARRA</option>
+                        <option value="238">MUNICÍPIO DE VOLTA REDONDA</option>
+                        <option value="118">OCPM - RAS</option>
+                        <option value="1263">ODPM I - RAS</option>
+                        <option value="117">PPM / CASCADURA - RAS</option>
+                        <option value="98">PPM / OLARIA - RAS</option>
+                        <option value="124">PPM / SJM - RAS</option>
+                        <option value="205">PREFEITURA ANGRA DOS REIS</option>
+                        <option value="190">PREFEITURA DA CIDADE DO RIO DE JANEIRO II</option>
+                        <option value="207">PREFEITURA DE BUZIOS</option>
+                        <option value="1257">PREFEITURA DE CABO FRIO</option>
+                        <option value="2">PREFEITURA DE CASIMIRO DE ABREU</option>
+                        <option value="248">PREFEITURA DE CORDEIRO</option>
+                        <option value="27">PREFEITURA DE ITAGUAÍ</option>
+                        <option value="8">PREFEITURA DE MACAÉ</option>
+                        <option value="206">PREFEITURA DE MARICÁ</option>
+                        <option value="1256">PREFEITURA DE NILÓPOLIS</option>
+                        <option value="4">PREFEITURA DE NOVA FRIBURGO</option>
+                        <option value="214">PREFEITURA DE NOVA IGUAÇÚ</option>
+                        <option value="10">PREFEITURA DE QUEIMADOS</option>
+                        <option value="245">PREFEITURA DE QUISSAMÃ</option>
+                        <option value="233">PREFEITURA DE RIO BONITO</option>
+                        <option value="12">PREFEITURA DE RIO DAS OSTRAS</option>
+                        <option value="212">PREFEITURA DE SAQUAREMA</option>
+                        <option value="170">RECOM</option>
+                        <option value="1276">RIO + SANEAMENTO</option>
+                        <option value="88">RPMONT - RAS</option>
+                        <option value="246">SÃO JOÃO DE MERITI</option>
+                        <option value="198">SEGURANÇA PRESENTE</option>
+                        <option value="236">SSCC - RAS</option>
+                        <option value="161">SSI - RAS</option>
+                        <option value="22">SUPERVIA</option>
+                        <option value="29">UNIVERSIDADE DO ESTADO DO NORTE FLUMINENSE</option>
+                        <option value="216">VIA RIO</option>
+                        <option value="159">UPPMERJ - RAS</option>
+                    </select>
+                </div>
+                <div class="CPA" id="selects">
+                    <p class="info">CPA</p>
+                    <select id="CPA" class="sec-input" required>
+                        <option selected="selected" value="0">Selecione</option>
+                        <option value="27">10º BPM - 5º CPA</option>
+                        <option value="35">11º BPM - 7º CPA</option>
+                        <option value="24">12º BPM - 4º CPA</option>
+                        <option value="11">14º BPM - 2º CPA</option>
+                        <option value="17">15º BPM - 3º CPA</option>
+                        <option value="6">16º BPM - 1º CPA</option>
+                        <option value="7">17º BPM - 1º CPA</option>
+                        <option value="12">18º BPM - 2º CPA</option>
+                        <option value="8">19º BPM - 1º CPA</option>
+                        <option value="1">2º BPM - 1º CPA</option>
+                        <option value="18">20º BPM - 3º CPA</option>
+                        <option value="19">21º BPM - 3º CPA</option>
+                        <option value="39">22º BPM - 1º CPA</option>
+                        <option value="9">23º BPM - 1º CPA</option>
+                        <option value="20">24º BPM - 3º CPA</option>
+                        <option value="25">25º BPM - 4º CPA</option>
+                        <option value="36">26º BPM - 7º CPA</option>
+                        <option value="13">27º BPM - 2º CPA</option>
+                        <option value="28">28º BPM - 5º CPA</option>
+                        <option value="32">29º BPM - 6º CPA</option>
+                        <option value="2">3º BPM - 1º CPA</option>
+                        <option value="37">30º BPM - 7º CPA</option>
+                        <option value="14">31º BPM - 2º CPA</option>
+                        <option value="33">32º BPM - 6º CPA</option>
+                        <option value="29">33º BPM - 5º CPA</option>
+                        <option value="21">34º BPM - 3º CPA</option>
+                        <option value="26">35º BPM - 4º CPA</option>
+                        <option value="34">36º BPM - 6º CPA</option>
+                        <option value="30">37º BPM - 5º CPA</option>
+                        <option value="38">38º BPM - 7º CPA</option>
+                        <option value="22">39º BPM - 3º CPA</option>
+                        <option value="3">4º BPM - 1º CPA</option>
+                        <option value="15">40º BPM - 2º CPA</option>
+                        <option value="16">41º BPM - 2º CPA</option>
+                        <option value="4">5º BPM - 1º CPA</option>
+                        <option value="5">6º BPM - 1º CPA</option>
+                        <option value="23">7º BPM - 4º CPA</option>
+                        <option value="31">8º BPM - 6º CPA</option>
+                        <option value="10">9º BPM - 2º CPA</option>
+                    </select>
+                </div>
+                <div class="data">
+                    <p class="info">Data</p>
+                    <form method="post">
+                        <input id="date" type="text" name="date" placeholder="AAAA-MM-DD" class="sec-input" required>
+                    </form>
+                </div>
+
+                <button id="main-save"class="btn-save">Salvar</button>
+                <a href="get_new.html" class="link">Configurar dados</a>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
