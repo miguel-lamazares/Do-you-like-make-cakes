@@ -1,0 +1,28 @@
+main { 
+    margin-top: 8px;
+    text-align: center;
+}
+
+#icon-weather {
+    width: 250px;
+    height: auto;
+    
+    
+}
+
+#temperature {
+    font-size: 100px;
+    line-height: 1.2px;
+    
+    
+}
+
+#local {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 600;
+    position: flex;
+    text-align: center;
+    margin-top: 30%;
+
+}
