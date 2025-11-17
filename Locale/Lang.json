@@ -1,0 +1,21 @@
+const i18n = {
+  en: {
+    title: "Mini Projects Hub",
+    lead: "A simple index to group my micro-projects (HTML / CSS / JS). Click a card to open the project's entry file."
+  },
+
+  es: {
+    title: "Centro de Mini Proyectos",
+    lead: "Un índice sencillo para agrupar mis microproyectos (HTML / CSS / JS). Haz clic en una tarjeta para abrir el archivo principal del proyecto."
+  },
+
+  pt: {
+    title: "Hub de Mini Projetos",
+    lead: "Um índice simples para agrupar meus microprojetos (HTML / CSS / JS). Clique em um card para abrir o arquivo principal do projeto."
+  },
+
+  jp: {
+    title: "ミニプロジェクト・ハブ",
+    lead: "HTML・CSS・JS のミニプロジェクトをまとめたシンプルなインデックスです。カードをクリックするとプロジェクトのエントリーファイルが開きます。"
+  }
+};
