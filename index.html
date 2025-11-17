@@ -28,21 +28,18 @@
         <img src="IMG's/logo.jpg" class="logo">
       </div>
       <div>
-        <h1 data-i18n="title"></h1>
-        <p class="lead" data-i18n="lead"></p>
+        <h1 data-lang="title"></h1>
+        <p class="lead" data-lang="lead"></p>
         <div class="controls">
           <button class="btn" id="refreshBtn">Refresh status</button>
-          <button class="btn primary" id="openScriptBtn">Script / Tips</button>
+          <button class="btn primary" id="openScriptBtn">About</button>
           <button class="btn" id="copyCmd">Copy git commands</button>
           <div class="lang-selector">
-            <button class="btn primary"id="langBnt">
-              <img id="flagImg" src="Locale/flags/en.png">
-            </button>
             <div id="langMenu" class="hidden">
-              <img data-lang="en" src=".Locale/flags/en.png">
-              <img data-lang="es" src=".Locale/flags/es.png">
-              <img data-lang="pt" src=".Locale/flags/pt.png">
-              <img data-lang="jp" src=".Locale/flags/jp.png">
+              <img class="flagImg" data-lang="en" src="Locale/flags/en.png" alt="English">
+              <img class="flagImg" data-lang="es" src="Locale/flags/es.png" alt="Español">
+              <img class="flagImg" data-lang="pt" src="Locale/flags/pt.png" alt="Português">
+              <img class="flagImg" data-lang="jp" src="Locale/flags/jp.png" alt="日本語">
             </div>
           </div>
         </div>
@@ -64,11 +61,10 @@
   <!-- Modal for script / tips -->
   <div class="modal" id="modal">
     <div class="box">
-      <button class="btn" id="closeModal">Close</button>
-      <h2 style="margin-top:8px">Video Script (English)</h2>
-      <pre id="scriptPre"></pre>
+      <h2 style="margin-top:8px">Hello, Welcome to my projects hub!</h2>
+      <pre id="text"></pre>
       <div style="margin-top:12px">
-        <button class="btn primary" id="downloadScript">Download script</button>
+        <button class="btn primary" id="closeModal">Close</button>
       </div>
     </div>
   </div>

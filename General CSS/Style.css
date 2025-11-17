@@ -65,12 +65,17 @@ p.lead {
     cursor: pointer
 }
 .lang-selector{
-    padding-left: 80px;  
+    padding-left: 150px; 
+    margin-left: 20px; 
 }
-#flagImg{
-    width: 20px;
+.flagImg{
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 32px; 
     height: 20px;
 }
+
+
 
 .btn.primary {
     background: linear-gradient(90deg, #7b61ff, #ff6bbd);

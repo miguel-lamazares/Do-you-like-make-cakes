@@ -1,13 +1,13 @@
 
 // ==== CONFIG: list your projects here (title, folder, short description) ====
 const projects = [
-  { title: "Chat-chan 👘",desc: "A small playful UI (HTML/CSS/JS)." },
-  { title: "Driftwiki ⛐",desc: "Tiny wiki-style notes and interactions." },
-  { title: "Gengar's login 👻", desc: "A moody/purple login animation." },
-  { title: "Config page ⚙️",desc: "Config UI with animated background effects." },
-  { title: "Pokedex 🔮",desc: "Small Pokedex demo — maybe uses an API or local data." },
-  { title: "Social menu 🌐 ",desc: "Floating/animated social menu component." },
-  {title:"today is rain in xique-xique? 🌂",desc:"",folder:""}
+  { title: "Chat-chan 👘", desc: "🌸 Chat-chan - Gerador de Desculpas\n",folder:"https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/Chat-chan" },
+  { title: "Driftwiki ⛐", desc: "Tiny wiki-style notes and interactions.",folder:"https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/Driftwiki" },
+  { title: "Gengar's login 👻", desc: "A moody/purple login animation.",folder:"https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/Gangar's-login-page" },
+  { title: "Config page ⚙️", desc: "Config UI with animated background effects.",folder:"https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/Little-configs" },
+  { title: "Pokedex 🔮", desc: "Small Pokedex demo — maybe uses an API or local data.",folder:"https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/Pokedex" },
+  { title: "Social menu 🌐 ", desc: "Floating/animated social menu component.",folder:"https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/Social-menu" },
+  { title: "today is rain in xique-xique? 🌂", desc: "", folder: "https://github.com/miguel-lamazares/Do-you-like-make-cakes/tree/main/Projects/today%20is%20rain%20in%20xique-xique" }
 ];
 
 const grid = document.getElementById('projectsGrid');
@@ -20,8 +20,7 @@ projects.forEach(p => {
           <p>${p.desc}</p>
         </div>
         <div class="row">
-          <div style="margin-left:auto;display:flex;gap:8px;text-align:center;">
-            <a class="btn" href="${p.folder}" target="_blank" rel="noopener noreferrer">Open</a>
+          <div style="margin-left:auto;display:flex;gap:8px;">
             <button class="btn" onclick='openFolder("${p.folder}")'>Show</button>
           </div>
         </div>
@@ -35,46 +34,21 @@ function openFolder(folder) {
 }
 
 // Modal script content (tailored, edit as you like)
-const videoScript = `Welcome! I'm Miguel — welcome to my Mini Projects Showcase.
+const about = `Welcome! I'm Miguel — welcome to my Mini Projects Showcase.
 
 These are small HTML / CSS / JavaScript experiments I built while learning and exploring UI ideas.
 
-I'll quickly show you each one and highlight what it's about:
-
-1) Chat-chan — a playful UI with small interactions and micro animations. It explores character-driven styling and hover effects.
-
-2) Driftwiki — a tiny wiki-like interface for notes and short articles. Good for testing layout and local search behavior.
-
-3) Gengar's login — a moody login animation focused on motion and theme (great for practicing UI transitions).
-
-4) Config page with animed background — a settings/config page with an animated backdrop. Nice for learning layered CSS animations.
-
-5) Pokedex — a small demo that lists Pokémon and shows details. Useful for practicing fetch / API or local JSON handling.
-
-6) Socia menu — an animated floating social menu component that you can reuse in other projects.
-
-Recording tips (OBS / screen capture):
-- Record at 1920x1080, 30 or 60 FPS. Keep fonts large and use zoom-ins for small UI details.
-- Start with a short intro (5-8s) showing the hub, then open each project for 8-20s.
-- Use a microphone close to your mouth, speak clearly. Keep sentences short.
-- Add music under voice at low volume ("instrumental"), fade out when speaking.
-
-Closing: Thanks for watching — if you like any of these, check the repo for source code and feel free to fork or remix. See you!\n`;
+if you like any of these, check the repo for source code and feel free to fork or remix. See you!\n`;
 
 // Modal controls
 const modal = document.getElementById('modal');
-const scriptPre = document.getElementById('scriptPre');
-document.getElementById('openScriptBtn').addEventListener('click', () => { scriptPre.textContent = videoScript; modal.style.display = 'flex'; });
+const text = document.getElementById('text');
+document.getElementById('openScriptBtn').addEventListener('click', () => { text.textContent = about; modal.style.display = 'flex'; });
 document.getElementById('closeModal').addEventListener('click', () => { modal.style.display = 'none'; });
-document.getElementById('downloadScript').addEventListener('click', () => {
-  const blob = new Blob([videoScript], { type: 'text/plain;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a'); a.href = url; a.download = 'video-script-en.txt'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-});
 
 // Copy git commands
 document.getElementById('copyCmd').addEventListener('click', () => {
-  const cmd = `mkdir mini-projects\n# move your folders into mini-projects (or edit names)\n# then:\ncd mini-projects\n# copy this index.html into the mini-projects folder\ngit init\ngit add .\ngit commit -m "Initial mini projects hub"\n# add remote and push as needed`;
+  const cmd = `# Criar diretório para projetos\nmkdir -p mini-projects\n# Entrar na pasta\ncd mini-projects\n# CLONAR o repositório (em vez de git init)\ngit clone https://github.com/miguel-lamazares/Do-you-like-make-cakes.git\n# Entrar na pasta do projeto clonado\ncd Do-you-like-make-cakes\n# Verificar o status\ngit status`;
   navigator.clipboard.writeText(cmd).then(() => { alert('Git commands copied to clipboard'); }).catch(() => { alert('Could not copy. You can still follow the instructions in the file.'); });
 });
 
