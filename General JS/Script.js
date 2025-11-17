@@ -1,12 +1,13 @@
 
 // ==== CONFIG: list your projects here (title, folder, short description) ====
 const projects = [
-  { title: "Chat-chan",desc: "A small playful UI (HTML/CSS/JS)." },
-  { title: "Driftwiki",desc: "Tiny wiki-style notes and interactions." },
-  { title: "Gengar's login", desc: "A moody/purple login animation." },
-  { title: "Config page with animed background",desc: "Config UI with animated background effects." },
-  { title: "Pokedex",desc: "Small Pokedex demo — maybe uses an API or local data." },
-  { title: "Socia menu",desc: "Floating/animated social menu component." }
+  { title: "Chat-chan 👘",desc: "A small playful UI (HTML/CSS/JS)." },
+  { title: "Driftwiki ⛐",desc: "Tiny wiki-style notes and interactions." },
+  { title: "Gengar's login 👻", desc: "A moody/purple login animation." },
+  { title: "Config page ⚙️",desc: "Config UI with animated background effects." },
+  { title: "Pokedex 🔮",desc: "Small Pokedex demo — maybe uses an API or local data." },
+  { title: "Social menu 🌐 ",desc: "Floating/animated social menu component." },
+  {title:"today is rain in xique-xique? 🌂",desc:"",folder:""}
 ];
 
 const grid = document.getElementById('projectsGrid');
@@ -19,7 +20,7 @@ projects.forEach(p => {
           <p>${p.desc}</p>
         </div>
         <div class="row">
-          <div style="margin-left:auto;display:flex;gap:8px">
+          <div style="margin-left:auto;display:flex;gap:8px;text-align:center;">
             <a class="btn" href="${p.folder}" target="_blank" rel="noopener noreferrer">Open</a>
             <button class="btn" onclick='openFolder("${p.folder}")'>Show</button>
           </div>
