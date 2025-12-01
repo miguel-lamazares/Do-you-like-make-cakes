@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Mini Projects Hub — Miguel</title>
+  <title>Small project hub - Miguel</title>
   <link rel="icon" href="IMG's/Dragon.png">
 
   <link rel="stylesheet" href="General CSS/Style.css">
@@ -28,20 +28,13 @@
         <img src="IMG's/logo.jpg" class="logo">
       </div>
       <div>
-        <h1 data-lang="title"></h1>
-        <p class="lead" data-lang="lead"></p>
+        <h1 data-lang="title">Miguel Lamazares</h1>
+        <p class="lead" data-lang="lead">Follow me to see more things :)</p>
         <div class="controls">
           <button class="btn" id="refreshBtn">Refresh status</button>
           <button class="btn primary" id="openScriptBtn">About</button>
           <button class="btn" id="copyCmd">Copy git commands</button>
-          <div class="lang-selector">
-            <div id="langMenu" class="hidden">
-              <img class="flagImg" data-lang="en" src="Locale/flags/en.png" alt="English">
-              <img class="flagImg" data-lang="es" src="Locale/flags/es.png" alt="Español">
-              <img class="flagImg" data-lang="pt" src="Locale/flags/pt.png" alt="Português">
-              <img class="flagImg" data-lang="jp" src="Locale/flags/jp.png" alt="日本語">
-            </div>
-          </div>
+          <button class="btn primary" id="openSocialScriptBtn">Social media</button>
         </div>
       </div>
     </header>
@@ -68,6 +61,17 @@
       </div>
     </div>
   </div>
+
+  <div class="socialModal" id="socialModal">
+    <div class="box">
+      <h2 style="margin-top:8px">My Social Media</h2>
+      <pre id="socialText"></pre>
+      <div style="margin-top:12px">
+        <button class="btn primary" id="closeSocialModal">Close</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
+
